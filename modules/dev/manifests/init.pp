@@ -1,15 +1,17 @@
 class dev {
-  include gcc
+  include foreman
   include git
+  include gcc
   include heroku
   include memcached
   include mongodb
   include nodejs
   include openssl
-  include postgresql
   include pkgconfig
+  include postgresql
   include redis
   include ruby
+  include rubymine
 
   include dev::tools
 
@@ -25,11 +27,18 @@ class dev {
 
   package {
     [
+      'aws-elasticbeanstalk',
+      'awscli',
       'chromedriver',
+      'ctags',
+      'ec2-api-tools',
+      'elasticsearch',
       'elixir',
       'phantomjs',
+      's3cmd',
       'terminal-notifier',
       'the_silver_searcher',
+      'tmux',
       'v8'
     ]:
   }
