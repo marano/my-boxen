@@ -3,6 +3,9 @@ class base {
   include java
   include vundle
 
+  include base::cloud
+  include base::osx
+
   package {
     [
       'findutils',

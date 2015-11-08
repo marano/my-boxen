@@ -12,6 +12,8 @@ class dev {
   include redis
   include ruby
 
+  include dev::tools
+
   nodejs::version { '4.2.2': }
   nodejs::version { '5.0.0': }
 
