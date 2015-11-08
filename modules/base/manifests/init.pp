@@ -29,6 +29,7 @@ class base {
       'istat-menus',
       'google-chrome',
       'little-snitch',
+      'skype',
       'transmission',
       'vlc'
     ]: provider => 'brewcask'
