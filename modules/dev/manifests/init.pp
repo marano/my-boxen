@@ -26,7 +26,11 @@ class dev {
   package {
     [
       'chromedriver',
-      'phantomjs'
+      'elixir',
+      'phantomjs',
+      'terminal-notifier',
+      'the_silver_searcher',
+      'v8'
     ]:
   }
 }
