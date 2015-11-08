@@ -1,7 +1,7 @@
 class base {
-  include chrome
   include inifile
   include java
+  include vundle
 
   package {
     [
@@ -16,7 +16,18 @@ class base {
       'slurm',
       'ssh-copy-id',
       'tmate',
+      'vim',
       'wget'
     ]:
+  }
+
+  package {
+    [
+      'istat-menus',
+      'google-chrome',
+      'little-snitch',
+      'transmission',
+      'vlc'
+    ]: provider => 'brewcask'
   }
 }

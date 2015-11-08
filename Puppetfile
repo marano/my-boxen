@@ -26,7 +26,6 @@ github 'module_data', repo: 'ripienaar/puppet-module-data'
 
 github 'appstore', repo: 'xdissent/puppet-appstore'
 github 'brewcask'
-github 'chrome'
 github 'foreman'
 github 'gcc'
 github 'git'
