@@ -1,10 +1,14 @@
 ---
 :backends:
   - yaml
+  - eyaml
 :yaml:
   :datadir: "%{::boxen_home}/repo/hiera"
+:eyaml:
+  :datadir: "%{::boxen_home}/repo/hiera"
+  :pkcs7_private_key: ~/keys/private_key.pkcs7.pem
+  :pkcs7_public_key:  ~/keys/public_key.pkcs7.pem
 :hierarchy:
   - "users/%{github_login}"
   - common
-
 :merge_behavior: deeper
