@@ -3,6 +3,7 @@ class dev {
   include git
   include gcc
   include heroku
+  include iterm
   include memcached
   include mongodb
   include openssl
@@ -10,8 +11,9 @@ class dev {
   include postgresql
   include redis
 
-  include dev::ruby
+  include dev::iterm
   include dev::node
+  include dev::ruby
 
   package {
     [
