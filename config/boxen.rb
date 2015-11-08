@@ -22,3 +22,5 @@ ENV['BOXEN_REPO_NAME'] = 'marano/my-boxen'
 
 # required for Github Enterprise (defaults to "https://github.com/%s")
 # ENV['BOXEN_REPO_URL_TEMPLATE'] = 'https://github.yourdomain.com/%s'
+
+ENV["BOXEN_SRC_DIR"] = "/Users/#{`whoami`.strip}/code"
