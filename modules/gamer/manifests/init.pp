@@ -1,0 +1,3 @@
+class gamer {
+  include steam
+}
