@@ -5,9 +5,7 @@
 # environment.
 
 # Shortcut for a module from GitHub's boxen organization
-def github(name, options)
-  options ||= {}
-
+def github(name, options = {})
   if path = options.delete(:path)
     mod(name, path: path)
   else
