@@ -2,7 +2,7 @@
 # it to provide any custom code or behavior your Boxen setup requires.
 
 # Change the prefix boxen is installed to.
-ENV['BOXEN_HOME'] = '~/code/my-boxen'
+# ENV['BOXEN_HOME'] = '/opt/boxen'
 
 ENV['BOXEN_REPO_NAME'] = 'marano/my-boxen'
 
