@@ -6,7 +6,6 @@ class dev {
   include mongodb
   include nodejs
   include openssl
-  include phantomjs
   include postgresql
   include pkgconfig
   include redis
@@ -22,5 +21,12 @@ class dev {
   ruby_gem { 'bundler for all rubies':
     gem          => 'bundler',
     ruby_version => '*'
+  }
+
+  package {
+    [
+      'chromedriver',
+      'phantomjs'
+    ]:
   }
 }
