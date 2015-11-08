@@ -57,13 +57,13 @@ node default {
   include homebrew
   include stdlib
 
-  file { boxen::config::srcdir:
+  file { $boxen::config::srcdir:
     ensure => directory
   }
 
   file { "${boxen::config::srcdir}/my-boxen":
     ensure  => link,
     target  => $boxen::config::repodir,
-    require => File[boxen::config::srcdir]:
+    require => File[$boxen::config::srcdir]:
   }
 }
