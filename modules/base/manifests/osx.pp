@@ -1,6 +1,10 @@
 class base::osx {
   include osx
 
+  class { 'boxen::security':
+    require_password => false
+  }
+
   osx::dock::autohide
   osx::finder::show_external_hard_drives_on_desktop
   osx::finder::show_hidden_files
