@@ -1,0 +1,11 @@
+---
+ruby::build::ensure: "v20151028"
+ruby::global::version: "2.2.3"
+ruby::rbenv::ensure: "v0.4.0"
+ruby::rbenv_plugins:
+  rbenv-vars:
+    ensure: v1.2.0
+    source: sstephenson/rbenv-vars
+  rbenv-binstubs:
+    ensure: v1.4
+    source: ianheggie/rbenv-binstubs
