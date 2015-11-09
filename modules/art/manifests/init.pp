@@ -2,7 +2,8 @@ class art {
 
   package {
     [
-      'wacom-tablet'
+# TODO Look into why its failing
+#      'wacom-tablet'
     ]: provider => 'brewcask'
   }
 }
