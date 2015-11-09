@@ -9,6 +9,7 @@ class dev {
   include pkgconfig
   include postgresql
   include redis
+  include vundle
 
   include dev::iterm
   include dev::node
