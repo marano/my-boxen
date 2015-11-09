@@ -99,11 +99,6 @@ GITHUBTARBALL
     ruby (8.5.3)
 
 GITHUBTARBALL
-  remote: boxen/puppet-rubymine
-  specs:
-    rubymine (1.1.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
@@ -157,7 +152,6 @@ DEPENDENCIES
   redis (>= 0)
   repository (>= 0)
   ruby (>= 0)
-  rubymine (>= 0)
   stdlib (>= 0)
   sudo (>= 0)
   sysctl (>= 0)

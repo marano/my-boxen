@@ -1,6 +1,11 @@
 class dev::ruby {
   include ruby
-  include rubymine
+
+  package {
+    [
+      'rubymine',
+    ]: provider => 'brewcask'
+  }
 
   ruby::version { '2.2.3': }
 
