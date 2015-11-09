@@ -17,7 +17,6 @@ class base {
       'qt',
       'slurm',
       'ssh-copy-id',
-      'tmate',
       'vim',
       'wget'
     ]:

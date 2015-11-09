@@ -32,4 +32,10 @@ class dev {
       'v8'
     ]:
   }
+
+  homebrew::tap {
+    'nviennot/tmate':
+    } -> package { 'tmate':
+    ensure => present,
+  }
 }
