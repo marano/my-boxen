@@ -11,7 +11,7 @@ class vundle {
 
   repository { $vundle:
     source  => 'VundleVim/Vundle.vim',
-    require => File[$boxen::config::srcdir]
+    require => File[$vim_bundle]
   }
 
   exec { $vundle_install:
