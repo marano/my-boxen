@@ -16,7 +16,6 @@ class base {
       'qt',
       'slurm',
       'ssh-copy-id',
-      'vim',
       'wget'
     ]:
   }

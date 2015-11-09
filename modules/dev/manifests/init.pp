@@ -29,7 +29,8 @@ class dev {
       'terminal-notifier',
       'the_silver_searcher',
       'tmux',
-      'v8'
+      'v8',
+      'vim'
     ]:
   }
 
