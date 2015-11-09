@@ -9,4 +9,4 @@ ruby::rbenv_plugins:
   rbenv-binstubs:
     ensure: v1.4
     source: ianheggie/rbenv-binstubs
-nodejs::build::ensure: "v2.0.1"
+nodejs::build::ensure: "a57586647747a6b4c2341f297a0485e2b9bab49c"
