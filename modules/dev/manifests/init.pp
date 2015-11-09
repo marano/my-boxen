@@ -1,6 +1,5 @@
 class dev {
   include foreman
-  include git
   include gcc
   include heroku
   include iterm
@@ -24,6 +23,7 @@ class dev {
       'ec2-api-tools',
       'elasticsearch',
       'elixir',
+      'git',
       'phantomjs',
       's3cmd',
       'terminal-notifier',
