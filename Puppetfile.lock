@@ -99,6 +99,11 @@ GITHUBTARBALL
     rubymine (1.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-sysctl
+  specs:
+    sysctl (1.0.1)
+
+GITHUBTARBALL
   remote: pebbleit/puppet-macdefaults
   specs:
     macdefaults (0.0.1)
@@ -143,4 +148,5 @@ DEPENDENCIES
   ruby (>= 0)
   rubymine (>= 0)
   stdlib (>= 0)
+  sysctl (>= 0)
 
