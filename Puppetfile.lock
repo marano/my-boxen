@@ -31,7 +31,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.13.0)
+    homebrew (2.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-iterm2
@@ -56,7 +56,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
-    nodejs (5.0.0)
+    nodejs (5.0.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-openssl
@@ -94,11 +94,6 @@ GITHUBTARBALL
     rubymine (1.1.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-steam
-  specs:
-    steam (1.0.1)
-
-GITHUBTARBALL
   remote: pebbleit/puppet-macdefaults
   specs:
     macdefaults (0.0.1)
@@ -106,7 +101,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
-    stdlib (4.7.0)
+    stdlib (4.9.0)
 
 GITHUBTARBALL
   remote: ripienaar/puppet-module-data
@@ -142,5 +137,4 @@ DEPENDENCIES
   ruby (>= 0)
   rubymine (>= 0)
   stdlib (>= 0)
-  steam (>= 0)
 
