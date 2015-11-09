@@ -104,11 +104,6 @@ GITHUBTARBALL
     macdefaults (0.0.1)
 
 GITHUBTARBALL
-  remote: puppetlabs/puppetlabs-inifile
-  specs:
-    inifile (1.4.1)
-
-GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
     stdlib (4.7.0)
@@ -132,7 +127,6 @@ DEPENDENCIES
   git (>= 0)
   heroku (>= 0)
   homebrew (>= 0)
-  inifile (>= 0)
   iterm2 (>= 0)
   java (>= 0)
   macdefaults (>= 0)
