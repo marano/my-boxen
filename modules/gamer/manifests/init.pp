@@ -1,3 +1,7 @@
 class gamer {
-  include steam
+  package {
+    [
+      'steam',
+    ]: provider => 'brewcask'
+  }
 }
