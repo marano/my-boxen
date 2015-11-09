@@ -20,6 +20,6 @@ class vundle {
   exec { 'rake make':
     cwd     => "${::user_home}/.vim/bundle/command-t/",
     onlyif  => 'file -d ~/.vim/bundle/command-t',
-    require => Repository[$vundle_install]
+    require => Exec[$vundle_install]
   }
 }
