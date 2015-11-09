@@ -11,4 +11,8 @@ class vundle {
     source  => 'VundleVim/Vundle.vim',
     require => File[$boxen::config::srcdir]
   }
+
+  exec { 'vim +BundleInstall +qa':
+    require => [ Repository[$vundle], Package['vim'] ]
+  }
 }
