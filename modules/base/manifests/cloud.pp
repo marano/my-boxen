@@ -1,8 +1,9 @@
 class base::cloud {
+  include googledrive
+
   package {
     [
-      'dropbox',
-      'google-drive'
+      'dropbox'
     ]: provider => 'brewcask'
   }
 }

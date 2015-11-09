@@ -24,6 +24,11 @@ GITHUBTARBALL
     git (2.7.92)
 
 GITHUBTARBALL
+  remote: boxen/puppet-googledrive
+  specs:
+    googledrive (1.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-heroku
   specs:
     heroku (2.1.1)
@@ -135,6 +140,7 @@ DEPENDENCIES
   foreman (>= 0)
   gcc (>= 0)
   git (>= 0)
+  googledrive (>= 0)
   heroku (>= 0)
   homebrew (>= 0)
   inifile (>= 0)
