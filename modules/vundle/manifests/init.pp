@@ -3,7 +3,7 @@ class vundle {
   $dot_vim        = "${user_home}/.vim"
   $vim_bundle     = "${dot_vim}/bundle"
   $vundle         = "${vim_bundle}/Vundle.vim"
-  $vundle_install = 'vim +BundleInstall +qa'
+  $vundle_install = "vim -p 'BundleInstall' -p 'qa'"
 
   file { [$dot_vim, $vim_bundle]:
     ensure  => directory
