@@ -6,8 +6,8 @@
   :datadir: "%{::boxen_home}/repo/hiera"
 :eyaml:
   :datadir: "%{::boxen_home}/repo/hiera"
-  :pkcs7_private_key: "/Users/${::boxen_user}/keys/private_key.pkcs7.pem"
-  :pkcs7_public_key:  "/Users/${::boxen_user}/keys/public_key.pkcs7.pem"
+  :pkcs7_private_key: "/Users/%{::boxen_user}/keys/private_key.pkcs7.pem"
+  :pkcs7_public_key:  "/Users/%{::boxen_user}/keys/public_key.pkcs7.pem"
 :hierarchy:
   - "users/%{github_login}"
   - common
