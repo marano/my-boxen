@@ -1,9 +1,10 @@
 class vundle {
-  $user_home      = "/Users/${::boxen_user}"
-  $dot_vim        = "${user_home}/.vim"
-  $vim_bundle     = "${dot_vim}/bundle"
-  $vundle         = "${vim_bundle}/Vundle.vim"
-  $vundle_install = "vim -p 'BundleInstall' -p 'qa'"
+  $user_home             = "/Users/${::boxen_user}"
+  $dot_vim               = "${user_home}/.vim"
+  $vim_bundle            = "${dot_vim}/bundle"
+  $vundle                = "${vim_bundle}/Vundle.vim"
+  $vundle_install_script = '/tmp/vundle_install'
+  $vundle_install        = "vim -s ${$vundle_install_script}"
 
   file { [$dot_vim, $vim_bundle]:
     ensure  => directory
@@ -14,8 +15,17 @@ class vundle {
     require => File[$vim_bundle]
   }
 
+  file { $vundle_install_script:
+    ensure  => file,
+    content => template('vundle/vundle_install')
+  }
+
   exec { $vundle_install:
-    require => [ Repository[$vundle], Package['vim'] ]
+    require => [
+      Package['vim'],
+      Repository[$vundle],
+      File[$vundle_install_script]
+    ]
   }
 
   exec { 'rake make':
