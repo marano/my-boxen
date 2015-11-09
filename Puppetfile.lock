@@ -34,6 +34,11 @@ GITHUBTARBALL
     homebrew (2.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-inifile
+  specs:
+    inifile (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-iterm2
   specs:
     iterm2 (1.2.5)
@@ -137,6 +142,7 @@ DEPENDENCIES
   git (>= 0)
   heroku (>= 0)
   homebrew (>= 0)
+  inifile (>= 0)
   iterm2 (>= 0)
   java (>= 0)
   macdefaults (>= 0)
