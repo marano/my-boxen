@@ -1,7 +1,6 @@
 require boxen::environment
 require homebrew
 require gcc
-require git
 
 Exec {
   group       => 'staff',
@@ -55,6 +54,7 @@ Homebrew::Formula <| |> -> Package <| |>
 node default {
 
   include brewcask
+  include git
   include homebrew
   include stdlib
 
