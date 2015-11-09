@@ -1,7 +1,8 @@
 class vundle {
-  $user_home  = "/Users/${::boxen_user}"
-  $vim_bundle = "${user_home}/.vim/bundle"
-  $vundle     = "${vim_bundle}/Vundle.vim"
+  $user_home      = "/Users/${::boxen_user}"
+  $vim_bundle     = "${user_home}/.vim/bundle"
+  $vundle         = "${vim_bundle}/Vundle.vim"
+  $vundle_install = 'vim +BundleInstall +qa'
 
   file { $vim_bundle:
     ensure  => directory
@@ -12,7 +13,13 @@ class vundle {
     require => File[$boxen::config::srcdir]
   }
 
-  exec { 'vim +BundleInstall +qa':
+  exec { $vundle_install:
     require => [ Repository[$vundle], Package['vim'] ]
+  }
+
+  exec { 'rake make':
+    cwd     => '~/.vim/bundle/command-t/',
+    onlyif  => 'file -d ~/.vim/bundle/command-t',
+    require => Repository[$vundle_install]
   }
 }
