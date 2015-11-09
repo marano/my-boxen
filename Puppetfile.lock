@@ -99,6 +99,11 @@ GITHUBTARBALL
     rubymine (1.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-sudo
+  specs:
+    sudo (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-sysctl
   specs:
     sysctl (1.0.1)
@@ -148,5 +153,6 @@ DEPENDENCIES
   ruby (>= 0)
   rubymine (>= 0)
   stdlib (>= 0)
+  sudo (>= 0)
   sysctl (>= 0)
 
