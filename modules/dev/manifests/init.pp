@@ -4,7 +4,6 @@ class dev {
   include heroku
   include iterm
   include memcached
-  include mongodb
   include openssl
   include pkgconfig
   include postgresql
@@ -24,6 +23,7 @@ class dev {
       'elasticsearch',
       'elixir',
       'git',
+      'mongodb',
       'phantomjs',
       's3cmd',
       'terminal-notifier',
