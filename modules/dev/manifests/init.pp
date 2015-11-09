@@ -5,6 +5,7 @@ class dev {
   include iterm
   include memcached
   include openssl
+  include phantomjs
   include pkgconfig
   include postgresql
   include redis
@@ -24,7 +25,6 @@ class dev {
       'elixir',
       'git',
       'mongodb',
-      'phantomjs',
       's3cmd',
       'terminal-notifier',
       'the_silver_searcher',
