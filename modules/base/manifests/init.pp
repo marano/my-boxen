@@ -9,7 +9,6 @@ class base {
     [
       'findutils',
       'gnu-tar',
-      'grep',
       'htop-osx',
       'p7zip',
       'iftop',
