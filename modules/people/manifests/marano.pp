@@ -4,4 +4,6 @@ class people::marano {
   include dev
   include dotfiles
   include gamer
+
+  include iterm2::colors::solarized_dark
 }

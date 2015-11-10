@@ -2,7 +2,7 @@ class dev {
   include foreman
   include gcc
   include heroku
-  include iterm
+  include iterm2::stable
   include memcached
   include openssl
   include phantomjs
