@@ -11,7 +11,6 @@ class dev {
   include redis
   include vundle
 
-  include dev::iterm
   include dev::node
   include dev::ruby
 
