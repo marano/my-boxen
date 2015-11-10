@@ -17,4 +17,9 @@ class dev::ruby {
     gem          => 'bundler',
     ruby_version => '*'
   }
+
+  ruby_gem { 'rake for all rubies':
+    gem          => 'rake',
+    ruby_version => '*'
+  }
 }
