@@ -1,4 +1,4 @@
-class base::cloud {
+class essentials::cloud {
   include googledrive
 
   package {

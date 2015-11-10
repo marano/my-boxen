@@ -1,8 +1,8 @@
-class base {
+class essentials {
   include java
 
-  include base::cloud
-  include base::osx
+  include essentials::cloud
+  include essentials::osx
 
   package {
     [

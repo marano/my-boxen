@@ -1,4 +1,4 @@
-class base::osx {
+class essentials::osx {
   include macdefaults
   include osx::dock::autohide
   include osx::finder::show_external_hard_drives_on_desktop
