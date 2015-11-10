@@ -1,8 +1,8 @@
-class essentials {
+class apps {
   include java
 
-  include essentials::cloud
-  include essentials::osx
+  include apps::cloud
+  include apps::osx
 
   package {
     [

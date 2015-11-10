@@ -1,6 +1,6 @@
 class people::marano {
+  include apps
   include art
-  include essentials
   include dev
   include gamer
 

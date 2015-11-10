@@ -1,4 +1,4 @@
-class essentials::osx {
+class apps::osx {
   include macdefaults
 
   include osx::dock::autohide
