@@ -28,7 +28,7 @@ class vundle {
     ]
   }
 
-  exec { 'rake make':
+  exec { 'rbenv local system && rbenv rehash && bundle && rake make':
     cwd     => "${user_home}/.vim/bundle/command-t/",
     onlyif  => 'file -d ~/.vim/bundle/command-t',
     require => Exec[$vundle_install]
