@@ -52,6 +52,9 @@ Service {
 Homebrew::Formula <| |> -> Package <| |>
 
 node default {
+  if $::root_encrypted == 'no' {
+    fail('Please enable full disk encryption and try again')
+  }
 
   include brewcask
   include git
