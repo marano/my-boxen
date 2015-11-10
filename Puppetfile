@@ -5,12 +5,18 @@
 # environment.
 
 # Shortcut for a module from GitHub's boxen organization
-def github(name, options = {})
+def github(name, *args)
+  options = args.last.is_a?(Hash) ? args.last : {}
   if path = options.delete(:path)
     mod(name, path: path)
   else
+    version = args.first.is_a?(String) ? args.first : nil
     options[:repo] ||= "boxen/puppet-#{name}"
-    mod(name, github_tarball: options[:repo])
+    if version
+      mod(name, version, github_tarball: options[:repo])
+    else
+      mod(name, github_tarball: options[:repo])
+    end
   end
 end
 
