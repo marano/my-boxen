@@ -20,7 +20,8 @@ class vundle {
     content => template('vundle/vundle_install')
   }
 
-  exec { $vundle_install:
+  exec { ':BundleInstall':
+    command => $vundle_install,
     require => [
       Package['vim'],
       Repository[$vundle],
@@ -31,6 +32,6 @@ class vundle {
   exec { 'rake make':
     cwd     => "${user_home}/.vim/bundle/command-t/",
     onlyif  => 'file -d ~/.vim/bundle/command-t',
-    require => [Exec[$vundle_install], Ruby_gem['rake for all rubies']]
+    require => [Exec[':BundleInstall'], Ruby_gem['rake for all rubies']]
   }
 }

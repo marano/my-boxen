@@ -5,6 +5,14 @@ class people::marano {
   include gamer
 
   include iterm2::colors::solarized_dark
+  include osx::global::enable_standard_function_keys
+  include osx::keyboard::capslock_to_control
+  include osx::finder::show_hidden_files
+  include osx::finder::unhide_library
+
+  class { 'boxen::security':
+    require_password => false
+  }
 
   $dotfiles       = "${boxen::config::srcdir}/setup.bat"
   $setup_dotfiles = "${boxen::config::srcdir}/setup.bat/link_dotfiles"
@@ -15,6 +23,7 @@ class people::marano {
   }
 
   exec { $setup_dotfiles:
-    require => Repository[$dotfiles]
+    require => Repository[$dotfiles],
+    before => Exec[':BundleInstall']
   }
 }
