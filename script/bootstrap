@@ -90,7 +90,7 @@ else
     fi
 
     log "====> Installing gem dependencies"
-    bundle install --binstubs bin --path .bundle --quiet "$@" && write_checksum
+    bundle install --quiet --binstubs bin && write_checksum
 fi
 
 # Fix the binstubs to use system ruby
