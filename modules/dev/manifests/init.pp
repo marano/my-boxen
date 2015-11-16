@@ -25,6 +25,7 @@ class dev {
       'elixir',
       'git',
       'mongodb',
+      'openssl',
       's3cmd',
       'terminal-notifier',
       'the_silver_searcher',
