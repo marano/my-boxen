@@ -4,7 +4,6 @@ class dev {
   include heroku
   include iterm2::stable
   include memcached
-  include openssl
   include phantomjs
   include pkgconfig
   include postgresql
@@ -39,5 +38,9 @@ class dev {
     'nviennot/tmate':
     } -> package { 'tmate':
     ensure => present,
+  }
+
+  exec { 'brew link openssl --force':
+    require => Package['openssl']
   }
 }
