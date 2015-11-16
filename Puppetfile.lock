@@ -64,11 +64,6 @@ GITHUBTARBALL
     nodejs (5.0.5)
 
 GITHUBTARBALL
-  remote: boxen/puppet-openssl
-  specs:
-    openssl (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-osx
   specs:
     osx (2.8.0)
@@ -150,7 +145,6 @@ DEPENDENCIES
   memcached (= 2.0.0)
   module_data (= 0.0.4)
   nodejs (= 5.0.5)
-  openssl (= 1.0.0)
   osx (= 2.8.0)
   phantomjs (= 3.0.0)
   pkgconfig (= 1.0.0)
