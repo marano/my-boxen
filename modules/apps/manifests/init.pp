@@ -15,6 +15,7 @@ class apps {
       'qt',
       'slurm',
       'ssh-copy-id',
+      'tree',
       'wget'
     ]:
   }
