@@ -41,21 +41,21 @@ class dev {
   }
 
   exec { 'brew link openssl --force':
-    require => Package['openssl']
+    subscribe => Package['openssl']
   }
 
   exec { 'auto launch redis':
-    command => 'ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents',
-    require => Package['redis']
+    command   => 'ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents',
+    subscribe => Package['redis']
   }
 
   exec { 'auto launch memcached':
-    command => 'ln -sfv /usr/local/opt/memcached/*.plist ~/Library/LaunchAgents',
-    require => Package['memcached']
+    command   => 'ln -sfv /usr/local/opt/memcached/*.plist ~/Library/LaunchAgents',
+    subscribe => Package['memcached']
   }
 
   exec { 'load auto launch services':
-    command => 'launchctl load ~/Library/LaunchAgents/',
-    require => Exec['auto launch memcached', 'auto launch redis']
+    command   => 'launchctl load ~/Library/LaunchAgents/',
+    subscribe => Exec['auto launch memcached', 'auto launch redis']
   }
 }

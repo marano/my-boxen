@@ -24,6 +24,6 @@ class people::marano {
 
   exec { $setup_dotfiles:
     require => Repository[$dotfiles],
-    before => Exec[':BundleInstall']
+    before  => Exec[':BundleInstall']
   }
 }
