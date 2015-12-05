@@ -3,7 +3,8 @@ class dev::node {
 
   package {
     [
-      'nodenv'
+      'nodenv',
+      'node' # Installs system node and npm
     ]:
   }
 
