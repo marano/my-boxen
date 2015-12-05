@@ -54,11 +54,6 @@ GITHUBTARBALL
     java (1.8.4)
 
 GITHUBTARBALL
-  remote: boxen/puppet-nodejs
-  specs:
-    nodejs (5.0.5)
-
-GITHUBTARBALL
   remote: boxen/puppet-osx
   specs:
     osx (2.8.0)
@@ -133,7 +128,6 @@ DEPENDENCIES
   java (= 1.8.4)
   macdefaults (= 0.0.1)
   module_data (= 0.0.4)
-  nodejs (= 5.0.5)
   osx (= 2.8.0)
   phantomjs (= 3.0.0)
   pkgconfig (= 1.0.0)
