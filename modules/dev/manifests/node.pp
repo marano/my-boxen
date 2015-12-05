@@ -1,6 +1,12 @@
 class dev::node {
   $nvm_folder = "/Users/${::boxen_user}/.nvm"
 
+  package {
+    [
+      'nodenv'
+    ]:
+  }
+
   repository { $nvm_folder:
     source => 'creationix/nvm',
     notify => Exec['checkout latest nvm version']
