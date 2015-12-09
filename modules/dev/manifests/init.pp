@@ -34,6 +34,8 @@ class dev {
     ]:
   }
 
+  appstore::app { 'Xcode': source => 'xcode/id497799835' }
+
   homebrew::tap {
     'nviennot/tmate':
     } -> package { 'tmate':
