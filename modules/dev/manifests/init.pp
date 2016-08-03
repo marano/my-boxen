@@ -36,12 +36,6 @@ class dev {
 
   appstore::app { 'Xcode': source => 'xcode/id497799835' }
 
-  homebrew::tap {
-    'nviennot/tmate':
-    } -> package { 'tmate':
-    ensure => present,
-  }
-
   exec { 'brew link openssl --force':
     subscribe => Package['openssl']
   }
