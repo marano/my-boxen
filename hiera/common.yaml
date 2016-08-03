@@ -1,7 +1,7 @@
 ---
-ruby::build::ensure: "v20151028"
+ruby::build::ensure: "v20160602"
 ruby::global::version: "2.2.3"
-ruby::rbenv::ensure: "v0.4.0"
+ruby::rbenv::ensure: "v1.0.0"
 ruby::rbenv_plugins:
   rbenv-vars:
     ensure: v1.2.0
